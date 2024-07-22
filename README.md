@@ -18,14 +18,17 @@ The first step is to define the problem. The questions I and the company are try
 10.	What is the average amount spent by each gender
 11.	How much was spent in particular cities with the corresponding year
 
-#### Data Sourcing
+### Data Sourcing
 In this project, the dataset used is gotten from Kaggle. It has only one table that contains 26,052 rows and 8 columns
 
-##### Data Importation
+### Data Importation
 The dataset was downloaded in CSV format and was analysed using Microsoft SQL Server. After importation, the data needs to be be processed and cleaned to get accurate results because using messy, dirty data leads to inaccurate insights.
 
-##### Data Transformation and Cleaning
+### Data Transformation and Cleaning
 This is one of the most important steps in data analysis. The dataset was checked for duplicates and null values.
 ![image](https://github.com/user-attachments/assets/0b5090b4-eacd-4047-926d-fefdbaee11de)
+
+### Data Analysis
+
 
     
