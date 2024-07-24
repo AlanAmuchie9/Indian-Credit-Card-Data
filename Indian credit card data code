@@ -1,3 +1,4 @@
+¬¬¬ sql
 -- Write a query to retieve all the data to take a proper look at it
 
 SELECT *
@@ -113,5 +114,7 @@ FROM credit_card
 WHERE Exp_Type = 'bills'
 GROUP BY Gender, Exp_Type
 ORDER BY amount_spent DESC
+
+¬¬¬
 
 
