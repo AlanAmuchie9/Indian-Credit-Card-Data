@@ -47,8 +47,8 @@ Knowing how much each gender spends on a particular expense can help companies t
 ![image](https://github.com/user-attachments/assets/1abf8465-f98a-45be-b06c-69b03ba7f0a7)
 
 ### Key Insights
- -- 2014 had the most money spent
- -- The silver card type is the most popular
+ - 2014 had the most money spent
+ - The silver card type is the most popular
 
 
 
