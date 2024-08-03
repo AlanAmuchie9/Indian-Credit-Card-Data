@@ -1,17 +1,16 @@
 # Indian-Credit-Card-Data
 An analysis of the credit card usage in india using SQL  
 ## Introduction
-This data analysis project helps to give insight into the use of credit cards in various Indian cities. By analysing various trends, we hope to identify trends, make sale and profit driven recommendation
+This data analysis project helps to give insight into the use of credit cards in various Indian cities. By analysing this data set, we hope to identify trends, make sale and profit driven recommendation
 
 ### Problem Statement
 The first step is to define the problem. The questions I and the company are trying to answer are:
 1.	How does spending vary by card type?
 2.	What are the trends in spending amount over the years
 3.	What is the average amount spent by each gender
-4.	What is the frequency of use in the top 3 cities
-5.	What are the cities with the top 10 spendings
-6.	How much does each gender spend on different expense types
-7.	 How much was spent in particular cities with the corresponding year
+4.	What are the cities with the top 10 spendings
+5.	How much does each gender spend on different expense types
+6.	How much was spent in particular cities with the corresponding year
 
 ### Data Sourcing
 In this project, the dataset used is gotten from Kaggle. It has only one table that contains 26,052 rows and 8 columns
@@ -37,6 +36,22 @@ A new column for the years didn't have to be added, but I added it for better un
 
 The third question, 'What is the relationship between gender and amount spent' answers the question of which particular gender spends more. Knowledge of spending by gender could be used by companies to create targeted ads and promos to a specific gender. 
 ![image](https://github.com/user-attachments/assets/a184c736-426f-435d-9a41-96df9a0c7cb5)
+
+The fourth question, 'What cities have the top 10 spendings' helps us understand the places where people tend to spend more electronically. These are the top 10 cities where eletronic spending via card is most popular. Cities like this tend to be more developed and have more infrastructure, so corporations can focus their resources here to grow their business
+![image](https://github.com/user-attachments/assets/eec68d01-1ce0-4b58-9cd8-6a9cfbf68e6e)
+
+Knowing how much each gender spends on a particular expense can help companies tailor their marketing strategies and product offerings based on the spending habits of each gender. In this query, we made an inquiry into how much each gender spends on bills and it was discovered that females spent more
+![image](https://github.com/user-attachments/assets/1383f526-0ea4-439c-822a-86df533f6621)
+
+'How much waas spent in particular cities with the corresponding year' helps us understand the economic situation and spending habits of the people of a particular in a given year
+![image](https://github.com/user-attachments/assets/1abf8465-f98a-45be-b06c-69b03ba7f0a7)
+
+### Key Insights
+ -- 2014 had the most money spent
+ -- The silver card type is the most popular
+
+
+
 
 
 
