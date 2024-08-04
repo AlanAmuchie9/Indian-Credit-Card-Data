@@ -34,7 +34,7 @@ GROUP BY city, card_type
 
 -- How does the spending vary by card type?
 
-SELECT Card_Type, SUM(CAST(REPLACE(REPLACE(Amount, '£', ''), ',', '') AS DECIMAL(10, 2))) AS Total_Amount
+SELECT Card_Type, SUM(CAST(REPLACE(REPLACE(Amount, 'Â£', ''), ',', '') AS DECIMAL(10, 2))) AS Total_Amount
 FROM dbo.credit_card
 GROUP BY Card_Type
 ORDER BY Total_Amount
@@ -52,7 +52,7 @@ SET Years = YEAR(CONVERT(DATE, Date, 103))
 SELECT 
     card_type, 
     Years, 
-    SUM(CAST(REPLACE(REPLACE(Amount, '£', ''), ',', '') AS DECIMAL(10, 2))) AS Total_Amount
+    SUM(CAST(REPLACE(REPLACE(Amount, 'Â£', ''), ',', '') AS DECIMAL(10, 2))) AS Total_Amount
 FROM 
     dbo.credit_card
 GROUP BY 
@@ -63,23 +63,9 @@ ORDER BY
     Card_Type
 
 
---What is the average amount spent for each card type?
-
-SELECT 
-    card_type, 
-    AVG(CAST(REPLACE(REPLACE(Amount, '£', ''), ',', '') AS DECIMAL(10, 2))) AS Average_Amount
-FROM 
-    dbo.credit_card
-GROUP BY 
-    Card_Type
-ORDER BY 
-    Average_Amount DESC
-
-
-
 -- What is the average amount spent by each gender
 
-SELECT Gender, AVG(CAST(REPLACE(REPLACE(Amount, '£', ''), ',', '') AS DECIMAL(10, 2))) AS Average_Amount
+SELECT Gender, AVG(CAST(REPLACE(REPLACE(Amount, 'Â£', ''), ',', '') AS DECIMAL(10, 2))) AS Average_Amount
 FROM credit_card
 GROUP BY Gender
 ORDER BY Average_Amount 
@@ -89,22 +75,7 @@ ORDER BY Average_Amount
 
 SELECT TOP 10 *
 FROM credit_card
-ORDER BY CAST(REPLACE(REPLACE(Amount, '£', ''), ',', '') AS DECIMAL(10, 2)) 
-
-/* We can find how much was spent in a particular city and year. For this query, we will use one example but it can be applied to the rest
-*/
-
-SELECT *
-FROM credit_card
-WHERE City = 'Delhi, India' AND Years = 2014
-ORDER BY Date
-
---Count of transactions for different expense types
-
-SELECT exp_type, COUNT(*) AS Transaction_COUNT
-FROM credit_card
-GROUP BY exp_type
-ORDER BY Transaction_COUNT DESC
+ORDER BY CAST(REPLACE(REPLACE(Amount, 'Â£', ''), ',', '') AS DECIMAL(10, 2)) 
 
 --Write a query to find out what each gender spends on a particular expense. you can choose any expense type or all, but here we chose bills
 
@@ -113,6 +84,15 @@ FROM credit_card
 WHERE Exp_Type = 'bills'
 GROUP BY Gender, Exp_Type
 ORDER BY amount_spent DESC
+	
+
+/* We can find how much was spent in a particular city and year. For this query, we will use one example but it can be applied to the rest
+*/
+
+SELECT *
+FROM credit_card
+WHERE City = 'Delhi, India' AND Years = 2014
+ORDER BY Date
 
 
 
