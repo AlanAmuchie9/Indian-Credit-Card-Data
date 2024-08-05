@@ -24,12 +24,11 @@ The dataset was downloaded in CSV format and was analysed using Microsoft SQL Se
 
 ### Data Transformation and Cleaning
 The data was cleaned in Microsoft Excel by checking for duplicates, blank rows, wrong spellings, outliers
-i.	I changed the date format in the Date row to short date format
-ii.	I changed the Amount column to a currency format
-iii.	I searched for duplicates and found none
-iv.	In the Gender column, I replaced the ‘f’ and ‘m’ with ‘female’ and ‘male’ respectively
-v.	I made sure there were no outliers in the dataset
-vi. There were no blank rows in the dataset
+ - I changed the date format in the date row to short date format
+ - I changed the amount column to a currency format
+ - I searched for duplicates and found none
+ - In the gender column, i replaced the 'f' and 'm' with 'female' and 'male' respectively
+ - I made sure there were no outliers in the dataset
 
 ### Data Analysis
 The first question this analysis aims to solve is 'How does spending vary by card type'. The amount spent by card type can be an indication of the popularity of the card type. Further research into the company can give us insight on what makes it popular or not so popular as the case may be. It was discovered that the silver card has the most amount spent on it, and on further inspection, it was discovered that it has more users. therefore, more users leads to more money spent with it.
